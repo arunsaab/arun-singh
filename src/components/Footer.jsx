@@ -45,7 +45,7 @@ const Footer = () => {
             href="tel:+9399137686"
             className="text-lg text-green-300 hover:text-yellow-500"
           >
-            +93991 37686
+            93991 37686
           </a>
         </div>
       </div>
@@ -90,10 +90,6 @@ const Footer = () => {
           </motion.a>
         ))}
       </div>
-
-      <p className="mt-8 text-center text-sm tracking-wide text-gray-400">
-        &copy;compileTab. All rights reserved.
-      </p>
     </div>
   );
 };
