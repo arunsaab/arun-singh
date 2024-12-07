@@ -40,6 +40,32 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Download Resume Section */}
+      <div className="flex items-center justify-center gap-8 mb-8">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1R1qjH1_-_QV0plRJYnk0gVtx1nR1CGij"
+          download
+          className="text-lg text-blue-400 hover:text-yellow-500"
+        >
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+              scale: [1, 1.1, 1], // Makes the text "wave" by scaling up and down
+              rotate: [0, 10, -10, 0] // Rotate the text left and right
+            }}
+            transition={{
+              duration: 3, // Duration of one wave cycle
+              repeat: Infinity, // Repeat the animation infinitely
+              repeatType: "loop", // Loop the animation continuously
+              ease: "easeInOut" // Smooth easing
+            }}
+          >
+            Download My Resume
+          </motion.span>
+        </a>
+      </div>
+
       <div className="flex items-center justify-center gap-8">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
           <motion.a
