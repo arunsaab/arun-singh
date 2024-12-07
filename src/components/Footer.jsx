@@ -1,6 +1,7 @@
 import React from "react";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { motion } from "framer-motion";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -32,14 +33,22 @@ const Footer = () => {
 
       {/* Mobile Numbers Section */}
       <div className="flex items-center justify-center gap-8 mt-8 mb-8">
-        <p className="text-lg text-white">Call me:</p>
+        {/* Replace text with an icon */}
+        <div className="text-white text-lg">
+          <i className="flex items-center justify-center">
+            <FaPhoneAlt className="text-white" size={24} />
+          </i>
+        </div>
         <div className="flex gap-6">
-          <h2 className="text-lg text-green-300 hover:text-yellow-500">
+          {/* Clickable phone number */}
+          <a
+            href="tel:+9399137686"
+            className="text-lg text-green-300 hover:text-yellow-500"
+          >
             +93991 37686
-          </h2>
+          </a>
         </div>
       </div>
-
       {/* Download Resume Section */}
       <div className="flex items-center justify-center gap-8 mb-8">
         <a
